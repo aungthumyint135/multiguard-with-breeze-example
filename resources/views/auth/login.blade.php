@@ -2,8 +2,9 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-<h1 class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"> User Login </h1>
-
+<div class="text-xl font-medium  text-center text-white"> 
+        User Login 
+    </div>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
